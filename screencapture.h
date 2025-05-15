@@ -19,6 +19,20 @@ public:
     void stop();
 
 private:
+    int frameCounter = 0;
+
+    bool initialize();
+    void cleanup();
+    void captureLoop();
+    void saveFrameAsPNG(Microsoft::WRL::ComPtr<ID3D11Texture2D> acquiredTexture);
+
+    std::atomic<bool> capturing;
+    std::thread captureThread;
+
+    Microsoft::WRL::ComPtr<ID3D11Device> d3dDevice;
+    Microsoft::WRL::ComPtr<ID3D11DeviceContext> d3dContext;
+    Microsoft::WRL::ComPtr<IDXGIOutput1> dxgiOutput1;
+    Microsoft::WRL::ComPtr<IDXGIOutputDuplication> duplication;
 
 };
 

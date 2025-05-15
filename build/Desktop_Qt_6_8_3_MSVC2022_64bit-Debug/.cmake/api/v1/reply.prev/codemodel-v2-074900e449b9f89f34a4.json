@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-e572f5270f7e51ceef53.json",
+					"jsonFile" : "directory-.-Debug-3c7728f846b94d94683c.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "screen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-screen-Debug-f114ee794e50e831e5d7.json",
+					"jsonFile" : "target-screen-Debug-3d69a6131b692232515b.json",
 					"name" : "screen",
 					"projectIndex" : 0
 				},
